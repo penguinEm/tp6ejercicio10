@@ -33,26 +33,31 @@
   flex-grow: 1;
 }
 
-.inputs-ancho{
+.inputs-ancho {
   width: 168px;
+}
+.color-inputs.anchoControls {
+  resize: none;
+}
+
+.cardScroll {
+  overflow-y: auto;
+  height: 200px;
 }
 
 /* Medias */
 
 @media (max-width: 768px) {
   .anchoControls {
-    width: 50%;
+    width: 100%;
   }
-  .anchoInputsTime {
-    width: auto;
+  .inputsColumna {
+    flex-direction: column;
   }
 }
 
 @media (min-width: 769px) {
   .anchoControls {
     width: 75%;
-  }
-  .anchoInputsTime {
-    width: 24%;
   }
 }
